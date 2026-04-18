@@ -1,0 +1,32 @@
+{
+  "name": "ornaculum_bot",
+  "license": "Unlicense",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Ornaculum bot service",
+  "dependencies": {
+    "fastify": "4.26.1",
+    "fastify-plugin": "4.5.1",
+    "@fastify/cookie": "9.3.1",
+    "sqlite3": "5.1.7",
+    "@nodutilus/clasyquelize": "0.0.2",
+    "telegraf": "4.16.0",
+    "htmlparser2": "9.1.0",
+    "geolib": "3.3.4"
+  },
+  "devDependencies": {
+    "@nodutilus/project-config": "latest",
+    "pino-pretty": "10.3.1",
+    "remark": "15.0.1",
+    "localtunnel": "2.0.2",
+    "pg": "8.11.3"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "test": "node app.js",
+    "tunnel": "LOCAL_TUNNEL=true node app.js",
+    "debug": "DEBUG_MODE=true node app.js",
+    "convertdb": "DEBUG_MODE=true SYNC_DATA_BASE=true node app.js",
+    "convertdb-prod": "NODE_ENV=production SYNC_DATA_BASE=true node app.js"
+  }
+}

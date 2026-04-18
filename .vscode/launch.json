@@ -1,0 +1,51 @@
+{
+  // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+  // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+  // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Current file",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${file}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run app.js DEBUG",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/app.js",
+      "env": {
+        "DEBUG_MODE": "true"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run app.js TEST",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/app.js",
+      "env": { }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run app.js PROD",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/app.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

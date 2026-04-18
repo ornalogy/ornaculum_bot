@@ -1,0 +1,12 @@
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# database
+app.ornalogy.ru.sqlite
+
+# env
+.local-env.json
